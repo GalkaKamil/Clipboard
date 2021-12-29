@@ -29,7 +29,7 @@ header {
 }
 
 .logo:active {
-  animation: drop-logo 1s linear 0s 1;
+  animation: drop-logo 0.8s linear 1s 5;
 }
 
 @keyframes drop-logo {
@@ -45,8 +45,8 @@ header {
     width: 125px;
   }
   50% {
-    margin: 193px 0 20px 0px;
-    height: 105px;
+    margin: 210px 0 20px 0px;
+    height: 90px;
     width: 125px;
   }
   60% {
