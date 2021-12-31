@@ -2,6 +2,7 @@ body {
   font-family: "Bai Jamjuree";
   font-size: 21px;
   font-weight: 400;
+  height: 2000px;
 }
 
 .background {
@@ -24,12 +25,16 @@ header {
 
 .logo {
   position: absolute;
-  transition: all 2s ease;
+  transition: all 0.8s ease;
   margin: 90px 0 20px 0;
 }
 
-.logo:active {
-  animation: drop-logo 0.8s linear 1s 5;
+.logo:hover {
+  position: absolute;
+  transition: all 0.8s ease;
+  transform: rotate(45deg);
+  margin: 90px 0 20px 0;
+  /* animation: drop-logo 0.5s ease 0s 1; */
 }
 
 @keyframes drop-logo {
@@ -143,4 +148,26 @@ h2 {
   text-align: center;
   color: hsl(201, 11%, 66%);
   margin: 0 0 30px 0;
+}
+
+.computer-paragraph-area {
+  width: 1490px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 70px;
+}
+
+h3 {
+  color: hsl(207, 6%, 37%);
+}
+.computer-paragraphs {
+  margin: 50px 0 0 115px;
+  width: 380px;
+  text-align: start;
+}
+
+.paragraphs-attributions {
+  color: hsl(201, 11%, 66%);
+  font-size: 18px;
 }
