@@ -1,0 +1,242 @@
+@import './variables';
+
+@function set_weight($weight){
+    @return map-get($fonts-weights, $weight)
+};
+
+@function set_font_size($font-size){
+    @return map-get($fonts-sizes, $font-size )
+};
+
+@mixin flex_center($direction) {
+    display: flex;
+    flex-direction: $direction;
+    @if $direction == 'row'{
+        justify-content: center;
+    } @else if $direction == 'column'{
+        align-items: center;
+    }
+}
+
+body{
+    font-family: "Bai Jamjuree";
+    font-weight: set_weight(regular);
+    font-size: set_font_size(regular);
+    height: 8000px;
+}
+
+.background {
+    @include flex_center(row);
+    position: relative;
+    z-index: -1;
+  }
+
+  .bg-image {
+    position: absolute;
+    top: -10px;
+  }
+
+  header {
+    @include flex_center(column)
+  }
+
+  
+.logo {
+    position: absolute;
+    transition: all 0.8s ease;
+    margin: 90px 0 20px 0;
+  }
+  
+  .logo:hover {
+    position: absolute;
+    transition: all 0.8s ease;
+    transform: rotate(45deg);
+    margin: 90px 0 20px 0;
+    /* animation: drop-logo 0.5s ease 0s 1; */
+  }
+  
+  @keyframes drop-logo {
+    0% {
+      margin: 90px 0 20px 0;
+    }
+    20% {
+      margin: 130px 0 20px 0;
+    }
+    40% {
+      margin: 170px 0 20px 0;
+      height: 125px;
+      width: 125px;
+    }
+    50% {
+      margin: 210px 0 20px 0px;
+      height: 90px;
+      width: 125px;
+    }
+    60% {
+      margin: 170px 0 20px 0;
+      height: 125px;
+      width: 125px;
+    }
+    80% {
+      margin: 130px 0 20px 0;
+    }
+    100% {
+      margin: 90px 0 20px 0;
+    }
+  }
+  
+  h1 {
+    margin-top: 273px;
+    font-size: set_font_size(h1);
+    font-weight: set_weight(medium);
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 25px;
+  }
+  
+  .header-parahraph {
+    width: 720px;
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+    margin: 0 0 30px 0;
+  }
+  
+  .buttons {
+    margin-top: 25px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-weight: 600;
+    width: 230px;
+    height: 55px;
+    border-radius: 30px;
+    margin-bottom: 0px;
+  }
+  
+  .green {
+    transition: all 0.5s ease;
+    background-color: hsl(171, 66%, 44%);
+    margin-right: 8px;
+    box-shadow: 0px 2px 5px hsl(171, 60%, 21%);
+  }
+  
+  .green:hover {
+    transition: all 0.5s ease;
+    background-color: hsl(171, 46%, 59%);
+  }
+  
+  .blue {
+    transition: all 0.5s ease;
+    background-color: hsl(233, 100%, 69%);
+    margin-left: 8px;
+    box-shadow: 0px 2px 4px hsl(232, 32%, 9%);
+  }
+  
+  .blue:hover {
+    transition: all 0.5s ease;
+    background-color: hsl(233, 88%, 73%);
+  }
+  
+  .section-computer {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: hsl(207, 6%, 37%);
+    margin-bottom: 18px;
+  }
+  
+  .mid-paragraph {
+    font-size: 18px;
+    line-height: 30px;
+    width: 720px;
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+    margin: 0 0 30px 0;
+  }
+  
+  .computer-paragraph-area {
+    width: 1490px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 55px;
+  }
+  .computer-paragraphs {
+    margin: 0 0 0 115px;
+    width: 380px;
+    text-align: start;
+  }
+  
+  h3 {
+    margin-bottom: 5px;
+    margin-top: 70px;
+    color: hsl(207, 6%, 37%);
+  }
+  
+  .paragraphs-small {
+    color: hsl(201, 11%, 66%);
+    font-size: 16px;
+  }
+  
+  .section-access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+  }
+  
+  .tablet-img {
+    margin-top: 80px;
+    margin-bottom: 58px;
+  }
+  
+  .section-supercharge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .partners-icons {
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  
+  .icon-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px 0 30px;
+  }
+  
+  .icons-h3 {
+    margin: 50px 0 20px 0;
+  }
+  
+  .paragraphs-icons {
+    text-align: center;
+    width: 350px;
+    line-height: 30px;
+  }
+  
+  .icon-img {
+    margin: 100px 110px 0 0;
+  }
+  
