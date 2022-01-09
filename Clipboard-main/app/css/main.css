@@ -1,60 +1,3 @@
-body {
-  font-family: "Bai Jamjuree";
-  font-weight: 400;
-  font-size: 21px;
-  height: 8000px;
-}
-
-.background {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  z-index: -1;
-}
-
-.bg-image {
-  position: absolute;
-  top: -10px;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.logo {
-  position: absolute;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  margin: 90px 0 20px 0;
-}
-
-.logo:hover {
-  position: absolute;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  margin: 90px 0 20px 0;
-  /* animation: drop-logo 0.5s ease 0s 1; */
-}
-
 @-webkit-keyframes drop-logo {
   0% {
     margin: 90px 0 20px 0;
@@ -115,24 +58,14 @@ header {
   }
 }
 
-h1 {
-  margin-top: 273px;
-  font-size: 46px;
-  font-weight: 600;
-  color: #4c545d;
-  margin-bottom: 25px;
+body {
+  font-family: "Bai Jamjuree";
+  font-weight: 400;
+  font-size: 21px;
+  height: 8000px;
 }
 
-.header-parahraph {
-  width: 720px;
-  text-align: center;
-  color: #9fabb2;
-  margin: 0 0 30px 0;
-}
-
-.buttons {
-  margin-top: 25px;
-  width: 500px;
+.background {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,19 +76,90 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 0px;
+  position: relative;
+  z-index: -1;
 }
 
-.button {
+.bg-image {
+  position: absolute;
+  top: -10px;
+}
+
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .logo {
+  position: absolute;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  margin: 90px 0 20px 0;
+}
+
+header .logo:hover {
+  position: absolute;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 90px 0 20px 0;
+  /* animation: drop-logo 0.5s ease 0s 1; */
+}
+
+header h1 {
+  margin-top: 273px;
+  font-size: 46px;
+  font-weight: 600;
+  color: #4c545d;
+  margin-bottom: 25px;
+}
+
+header .header-parahraph {
+  width: 720px;
+  text-align: center;
+  color: #9fabb2;
+  margin: 0 0 30px 0;
+}
+
+header .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 25px;
+  width: 500px;
+  margin-bottom: 0px;
+}
+
+header .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: whitesmoke;
   font-weight: 600;
   width: 230px;
@@ -164,7 +168,7 @@ h1 {
   margin-bottom: 0px;
 }
 
-.green {
+header .green {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: #26baa4;
@@ -173,13 +177,13 @@ h1 {
           box-shadow: 0px 2px 5px #15564c;
 }
 
-.green:hover {
+header .green:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: #66c7b8;
 }
 
-.blue {
+header .blue {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: #6173ff;
@@ -188,7 +192,7 @@ h1 {
           box-shadow: 0px 2px 4px #10121e;
 }
 
-.blue:hover {
+header .blue:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: #7e8cf7;
@@ -208,23 +212,7 @@ h1 {
           align-items: center;
 }
 
-h2 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #595f64;
-  margin-bottom: 18px;
-}
-
-.mid-paragraph {
-  font-size: 18px;
-  line-height: 30px;
-  width: 720px;
-  text-align: center;
-  color: #9fabb2;
-  margin: 0 0 30px 0;
-}
-
-.computer-paragraph-area {
+.section-computer .computer-paragraph-area {
   width: 1490px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,21 +227,10 @@ h2 {
   margin-top: 55px;
 }
 
-.computer-paragraphs {
+.section-computer .computer-paragraphs {
   margin: 0 0 0 115px;
   width: 380px;
   text-align: start;
-}
-
-h3 {
-  margin-bottom: 5px;
-  margin-top: 70px;
-  color: #595f64;
-}
-
-.paragraphs-small {
-  color: #9fabb2;
-  font-size: 16px;
 }
 
 .section-access {
@@ -270,7 +247,7 @@ h3 {
   margin-top: 140px;
 }
 
-.tablet-img {
+.section-access .tablet-img {
   margin-top: 80px;
   margin-bottom: 58px;
 }
@@ -288,7 +265,7 @@ h3 {
           align-items: center;
 }
 
-.partners-icons {
+.section-supercharge .partners-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,16 +273,16 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 1500px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 1500px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 80px;
 }
 
-.icon-div {
+.section-supercharge .partners-icons .icon-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,17 +296,44 @@ h3 {
   margin: 0 30px 0 30px;
 }
 
-.icons-h3 {
+.section-supercharge .partners-icons .icon-div .icons-h3 {
   margin: 50px 0 20px 0;
 }
 
-.paragraphs-icons {
+.section-supercharge .partners-icons .icon-div .paragraphs-icons {
   text-align: center;
   width: 350px;
   line-height: 30px;
 }
 
-.icon-img {
+.section-supercharge .partners-icons .icon-img {
   margin: 100px 110px 0 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #595f64;
+  margin-bottom: 18px;
+}
+
+.mid-paragraph {
+  font-size: 18px;
+  line-height: 30px;
+  width: 720px;
+  text-align: center;
+  color: #9fabb2;
+  margin: 0 0 30px 0;
+}
+
+h3 {
+  margin-bottom: 5px;
+  margin-top: 70px;
+  color: #595f64;
+}
+
+.paragraphs-small {
+  color: #9fabb2;
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */
