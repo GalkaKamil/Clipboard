@@ -130,74 +130,6 @@ header .header-parahraph {
   margin: 0 0 30px 0;
 }
 
-header .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 25px;
-  width: 500px;
-  margin-bottom: 0px;
-}
-
-header .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: whitesmoke;
-  font-weight: 600;
-  width: 230px;
-  height: 55px;
-  border-radius: 30px;
-  margin-bottom: 0px;
-}
-
-header .green {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background-color: #26baa4;
-  margin-right: 8px;
-  -webkit-box-shadow: 0px 2px 5px #15564c;
-          box-shadow: 0px 2px 5px #15564c;
-}
-
-header .green:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background-color: #66c7b8;
-}
-
-header .blue {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background-color: #6173ff;
-  margin-left: 8px;
-  -webkit-box-shadow: 0px 2px 4px #10121e;
-          box-shadow: 0px 2px 4px #10121e;
-}
-
-header .blue:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background-color: #7e8cf7;
-}
-
 .section-computer {
   margin-top: 120px;
   display: -webkit-box;
@@ -335,5 +267,110 @@ h3 {
 .paragraphs-small {
   color: #9fabb2;
   font-size: 16px;
+}
+
+.section-Clipboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+  width: 500px;
+  margin-bottom: 0px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: whitesmoke;
+  font-weight: 600;
+  width: 230px;
+  height: 55px;
+  border-radius: 30px;
+  margin-bottom: 0px;
+}
+
+.green {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #26baa4;
+  margin-right: 8px;
+  -webkit-box-shadow: 0px 2px 5px #15564c;
+          box-shadow: 0px 2px 5px #15564c;
+}
+
+.green:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #66c7b8;
+}
+
+.blue {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #6173ff;
+  margin-left: 8px;
+  -webkit-box-shadow: 0px 2px 4px #10121e;
+          box-shadow: 0px 2px 4px #10121e;
+}
+
+.blue:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #7e8cf7;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 200px;
+}
+
+.footer-child {
+  background-color: #F5F6F8;
+  width: 75vw;
+  height: 180px;
 }
 /*# sourceMappingURL=main.css.map */
