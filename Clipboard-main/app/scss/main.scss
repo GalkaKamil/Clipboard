@@ -59,7 +59,7 @@ body{
     font-family: "Bai Jamjuree";
     font-weight: set_weight(regular);
     font-size: set_font_size(regular);
-    height: 8000px;
+    
 }
 
 .background {
@@ -142,8 +142,6 @@ body{
       margin-bottom: 58px;
     }
   }
-  
-  
   
   .section-supercharge {
     @include flex_center(column);
@@ -250,17 +248,48 @@ body{
   }
 
   footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 200px;
+    width: 75vw;
+    
+    margin: auto;
+    margin-top: 150px;
   }
   
-  .footer-child{
+  .footerBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
     background-color: #F5F6F8;  
-    width: 75vw;
-    height: 180px;
+    height: 200px;
+    
 
+  }
+
+  .footerBlock__imageLogo{
+    margin-left: 200px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .footerBlock__navlist{
+    margin-left: 180px;
+    width: 600px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .footerBlock__navlist p{
+    margin-right: 80px;
+    color: #7A7B7F;
+  }
+
+  .footerBlock__imageCompany{
+    height: 35px;
+    width: 35px;
+    margin: 15px;
   }
   
   

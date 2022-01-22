@@ -62,7 +62,6 @@ body {
   font-family: "Bai Jamjuree";
   font-weight: 400;
   font-size: 21px;
-  height: 8000px;
 }
 
 .background {
@@ -355,6 +354,12 @@ h3 {
 }
 
 footer {
+  width: 75vw;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.footerBlock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,15 +367,48 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 200px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F5F6F8;
+  height: 200px;
 }
 
-.footer-child {
-  background-color: #F5F6F8;
-  width: 75vw;
-  height: 180px;
+.footerBlock__imageLogo {
+  margin-left: 200px;
+  height: 80px;
+  width: 80px;
+}
+
+.footerBlock__navlist {
+  margin-left: 180px;
+  width: 600px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footerBlock__navlist p {
+  margin-right: 80px;
+  color: #7A7B7F;
+}
+
+.footerBlock__imageCompany {
+  height: 35px;
+  width: 35px;
+  margin: 15px;
 }
 /*# sourceMappingURL=main.css.map */
